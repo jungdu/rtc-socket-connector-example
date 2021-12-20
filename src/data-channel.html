@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC DataChannel Example</title>
+  <style>
+    .form {
+      margin-top: 10px;
+    }
+
+    #messageInput{
+      width: 400px;
+    }
+
+    #sendBtn {
+      margin-left: 7px;
+      width: 87px;
+    }
+
+    #messageList {
+      width: 500px;
+      height: 200px;
+      border: 1px solid #aaa;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>WebRTC DataChannel Example</h1>
+  <p>Socket ID: <span id="socketId">not connected</span></p>
+  <p>Target ID: <input type="text" id="targetInput"></p>
+  <p><button id="connectBtn">CONNECT</button></p>
+  <br>
+  <p>
+    Connected Socket ID: <span id="connectedSocketId">null</span> 
+  </p>
+
+  <div id="messageList"></div>
+  <div class="form">
+    <input type="text" id="messageInput"><button id="sendBtn" disabled>SEND</button>
+  </div>
+  <script src="./data-channel.ts"></script>
+</body>
+</html>
