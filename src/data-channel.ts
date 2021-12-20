@@ -6,7 +6,7 @@ import {
 } from "rtc-socket-connector-client";
 
 function main() {
-  // HTML ELements
+	// HTML ELements
 	const connectedSocketId = document.getElementById(
 		"connectedSocketId"
 	) as HTMLSpanElement;
@@ -26,8 +26,8 @@ function main() {
 
 	// 2. Define RTCConnectionHandler
 	const handler: RTCConnectionHandler = {
-		onDataChannel: handleOnDataChannel
-	}
+		onDataChannel: handleOnDataChannel,
+	};
 
 	// 3. Create RTCConnectionManager
 	rtcConnectionManager = createRTCConnectionManager(socket, handler);
@@ -36,17 +36,16 @@ function main() {
 	connectBtn.addEventListener("click", handleClickConnectBtn);
 	sendBtn.addEventListener("click", handleClickSendMessageBtn);
 
-
-  // Functions
-  function addMessage(message: string) {
-    const elem = document.createElement("p");
-    elem.innerHTML = message;
-    messageList.appendChild(elem);
-  }
+	// Functions
+	function addMessage(message: string) {
+		const elem = document.createElement("p");
+		elem.innerHTML = message;
+		messageList.appendChild(elem);
+	}
 
 	function connectWebRTC(
 		rtcConnectionManager: RTCConnectionManager,
-		targetId: string,
+		targetId: string
 	) {
 		rtcConnectionManager.connect(targetId, {
 			enableDataChannel: true,
@@ -71,11 +70,11 @@ function main() {
 		sendBtn.disabled = false;
 		connectBtn.disabled = true;
 		dataChannel = newDataChannel;
-		
-		dataChannel.addEventListener("message", handleDataChannelMessage);
-		dataChannel.addEventListener("close", handleDataChannelClose)
 
-		function handleDataChannelMessage(event: MessageEvent<string>){
+		dataChannel.addEventListener("message", handleDataChannelMessage);
+		dataChannel.addEventListener("close", handleDataChannelClose);
+
+		function handleDataChannelMessage(event: MessageEvent<string>) {
 			addMessage(`<b>${socketId}:</b> ${event.data}`);
 		}
 
@@ -100,7 +99,7 @@ function main() {
 
 		const message = messageInput.value;
 		dataChannel.send(message);
-    addMessage(`<b>me:</b> ${message}`);
+		addMessage(`<b>me:</b> ${message}`);
 	}
 }
 
