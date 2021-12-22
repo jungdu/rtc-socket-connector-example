@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC MediaStream Example</title>
+  <style>
+    video{
+      width: 320px;
+      height: 200px;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>WebRTC MediaStream Example</h1>
+  <p>Socket ID: <span id="socketId">not connected</span></p>
+  <p>Target ID: <input type="text" id="targetInput"></p>
+  <p><button id="connectBtn">CONNECT</button></p>
+  <video id="myVideo" width="400" height="300"></video>
+  <video id="targetVideo" width="400" height="300"></video>
+  <script src="./media-stream.ts"></script>
+</body>
+</html>
