@@ -4939,6 +4939,30 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rtc-socket-connector-client@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/rtc-socket-connector-client/-/rtc-socket-connector-client-0.1.3.tgz#7431740fba22514a6d5ec7b3bebaea661af2fb00"
+  integrity sha512-L+pNgcjV9DKXWZA31PWlzIO6fdZ1re4/dmqwgaQXNN9ujhCU8W7Mc5JobFOh9Z1EQG3TQz5bKcQStMR62ZUoAw==
+  dependencies:
+    rtc-socket-connector-types "^0.0.7"
+    socket.io "^4.4.0"
+    socket.io-client "^4.4.0"
+
+rtc-socket-connector-server@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/rtc-socket-connector-server/-/rtc-socket-connector-server-0.1.0.tgz#ee1cfd56890b4aa04ac6249025b6506a80ad9815"
+  integrity sha512-k7/10LnaERTAGUPPh8rSJStjk/2kDVVgdLe1XFW2rKrcy0KGJ2rEHK2Sk/pw70DlYvk2HNYw+flyCDlcwjtjew==
+  dependencies:
+    rtc-socket-connector-types "^0.0.7"
+
+rtc-socket-connector-types@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/rtc-socket-connector-types/-/rtc-socket-connector-types-0.0.7.tgz#643ce410834d01a674096b4d3a6405f92ab627fa"
+  integrity sha512-PoqoixTXsv8DEOhvXnqdPxjk31WlTrnxcIoi+oCwUXyKFwRC0RlRdVQKVmd8N6NHkU/2Fvb79Ilv4WozMAMmqQ==
+  dependencies:
+    socket.io "^4.4.0"
+    socket.io-client "^4.4.0"
+
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"

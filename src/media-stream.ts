@@ -2,8 +2,8 @@ import { io } from "socket.io-client";
 import {
 	createRTCConnectionManager,
 	RTCConnectionHandler,
+	RTCConnectionManager
 } from "rtc-socket-connector-client";
-import RTCConnectionManager from "rtc-socket-connector-client/dist/RTCConnectionManager";
 
 function main() {
 	const connectBtn = document.getElementById("connectBtn") as HTMLButtonElement;
