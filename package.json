@@ -9,7 +9,8 @@
   "scripts": {
     "start:server": "ts-node src/server.ts",
     "start:media-stream": "parcel src/media-stream.html watch",
-    "start:data-channel": "parcel src/data-channel.html watch"
+    "start:data-channel": "parcel src/data-channel.html watch",
+    "start:web-rtc-connection": "parcel src/web-rtc-connection.html watch"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",

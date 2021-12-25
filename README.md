@@ -22,6 +22,42 @@ yarn start:<PAGE NAME>
 # Example Pages
 
 
+## WebRTC Connection
+Establish connection using RTCPeerConnection.  
+See change of connection status in console.  
+
+
+**Run project**
+```
+yarn start:web-rtc-connections
+```
+
+
+1. Open two browsers.  
+
+2. Access http://localhost:1234
+   
+3. Check socket id on the web page.  
+   
+4. Put socket id of the other browser to input box beside "Target ID"
+
+
+Open console to see the change of state.  
+You can see the messages below if the socket id is valid to connect.
+```
+connectionstatechange::: socket id:<SOCKET ID> state:connecting
+connectionstatechange::: socket id:<SOCKET ID> state:connected
+```
+Close or refresh one of opened browsers to close connection.
+You can see the state change when the connection is lost in console.
+
+```
+connectionstatechange::: socket id:<SOCKET ID> state:disconnected
+connectionstatechange::: socket id:<SOCKET ID> state:failed
+```
+
+
+
 ## Data Channel
 Chat with another browser with WebRTC. 
 
