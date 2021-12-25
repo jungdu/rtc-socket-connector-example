@@ -6,6 +6,7 @@ import {
 } from "rtc-socket-connector-client";
 
 function main() {
+	// Get HTML elements
 	const connectBtn = document.getElementById("connectBtn") as HTMLButtonElement;
 	const socketIdSpan = document.getElementById("socketId") as HTMLSpanElement;
 	const myVideo = document.getElementById("myVideo") as HTMLVideoElement;
@@ -51,6 +52,8 @@ function main() {
 		});
 	});
 
+	
+	// Functions
 	function getUserMedia() {
 		return new Promise<MediaStream>((resolve) => {
 			const constraints = { audio: false, video: true };
