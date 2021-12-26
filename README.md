@@ -105,7 +105,7 @@ yarn start:media-stream
 
 5. Click CONNECT button. And then you will see the screen from the other browser on the video element on the right side.  
 
-**Demonstration video**
+**Demonstration video**  
 [![media-stream-video](https://img.youtube.com/vi/KUZl51SP22I/0.jpg)](https://www.youtube.com/watch?v=KUZl51SP22I)
 
 ## File Transfer
