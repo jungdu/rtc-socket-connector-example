@@ -3,9 +3,9 @@ Examples to use WebRTC with [**rtc-socket-connector-client**](https://github.com
 
 Examples
 - [WebRTC Connection](https://github.com/jungdu/rtc-socket-connector-example#webrtc-connection)
-- [Data Channel](https://github.com/jungdu/rtc-socket-connector-example#data-channel)
-- [Media Stream](https://github.com/jungdu/rtc-socket-connector-example#media-stream)
-- [File Transfer](https://github.com/jungdu/rtc-socket-connector-example#file-transfer)
+- [Data Channel](https://github.com/jungdu/rtc-socket-connector-example#data-channel) (Chat)
+- [Media Stream](https://github.com/jungdu/rtc-socket-connector-example#media-stream) (Video chat)
+- [File Transfer](https://github.com/jungdu/rtc-socket-connector-example#file-transfer) 
 
 # Quick Start 
 
