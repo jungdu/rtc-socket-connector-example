@@ -1,5 +1,6 @@
-const socketIo = require("socket.io");
-const express = require("express");
+import socketIo from "socket.io";
+import express from "express";
+
 const {addRTCConnectionHandlers} = require("rtc-socket-connector-server");
 
 function startServer(port: number | string) {
@@ -10,7 +11,11 @@ function startServer(port: number | string) {
 	});
 
 	const socketServer = new socketIo.Server(server, {
-		cors: { origin: "http://localhost:1234" },
+		cors: { origin: "http://localhost" },
+	});
+
+	app.get("/", (req, res) => {
+		res.send("Hello World!");
 	});
 
 	addRTCConnectionHandlers(socketServer, {
