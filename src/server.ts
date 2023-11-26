@@ -10,7 +10,7 @@ function startServer(port: number | string) {
 	});
 
 	const socketServer = new socketIo.Server(server, {
-		cors: { origin: "http://localhost" },
+		cors: { origin: "http://localhost:1234" },
 	});
 
 	app.get("/", (req: any, res: any) => {
