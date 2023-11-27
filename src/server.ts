@@ -1,5 +1,6 @@
-const socketIo = require("socket.io");
-const express = require("express");
+import * as socketIo from "socket.io";
+import * as express from "express";
+
 const {addRTCConnectionHandlers} = require("rtc-socket-connector-server");
 
 function startServer(port: number | string) {
